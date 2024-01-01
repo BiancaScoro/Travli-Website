@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.home{
+    position: relative;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This will hide the horizontal scrollbar */
+    width: 100%;
+  }
+  
+  .header{
+    position: relative;
+    width: 100%;
+  }
+  
+  .home-bg-image {
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    text-align: center;
+    font-size: 6em; 
+    font-family: 'Heebo';
+  }
+
+  .searchbar-container{
+    background-color: #095D62;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 620px;
+    left: 0px; 
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchbar-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    position: absolute;
+    top: 0px;
+    left: 350px; 
+    width: 900px;
+    height: 200px;
+    background-color: none;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Noto Sans', 'sans-serif';
+    padding-bottom: 20px;
+  }
+
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    color: black;
+  }
+
+  .input input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .search-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px; /* Adjust the margin as needed */
+  }
+  
+  .search-button{
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #48C5CC;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+  }
+
+  .search-button:hover{
+    background-color: #92dde1;
+    color: black;
+  }
+
+  .title h1{
+    color: #095D62;
+    font-size: 45px;
+    position: absolute;
+    top: 1000px;
+    left: 760px;
+  }
+
+  .title p{
+    text-align: center;
+    position: absolute;
+    top: 1100px;
+    left: 0px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .cards{
+    position: absolute;
+    top: 1200px;
+    left: 390px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 800px;
+  }
+
+
+  @media (max-width: 600px) {
+
+    h1{
+        font-size: 2em;
+    }
+
+    .searchbar-container{
+        position: absolute;
+        top: 500px;
+        left: 0px; 
+        height: 300px;
+    }
+
+    .searchbar-grid {
+        left: 50px;
+        top: 40px;
+        width: 470px;
+    } 
+
+    .title h1{
+        left: 300px;
+        top: 950px;
+  }
+
+  .title p{
+    top: 1050px;
+  }
+
+  .cards{
+        position: absolute;
+        top: 1200px;
+        left: 110px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        width: 400px;
+  }
+
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.about {
+    position: relative;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This will hide the horizontal scrollbar */
+    width: 100%;
+  }
+  
+  .about-header{
+    position: relative;
+    width: 100%;
+  }
+  
+  .about-bg-image {
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .about-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    text-align: center;
+    font-size: 6em; 
+    font-family: 'Heebo';
+  }
+
+  .about-container h1{
+    color: #095D62;
+    font-size: 45px;
+    position: absolute;
+    top: 800px;
+    left: 760px;
+  }
+
+  .about-container p{
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .about-card{
+    position: absolute;
+    top: 1000px;
+    width: 900px;
+    left: 305px;
+  }
+
+  .about-container h2{
+    position: absolute;
+    top: 1370px;
+    text-align: center;
+    left: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .about-card2{
+    position: absolute;
+    top: 1500px;
+    width: 900px;
+    left: 305px;
+  }
+
+  @media (max-width: 600px) {
+
+    .about-header h1{
+        font-size: 2em;
+    }
+
+    .about-title h1{
+        left: 295px;
+        top: 620px;
+        font-size: 2em;
+    }
+
+  .about-title p{
+    top: 690px;
+    font-size: 14px;
+    }
+
+    .about-card{
+      width: 400px;
+      position: absolute;
+      top:830px;
+      left: 90px;
+    }
+    .about-container h2{
+      top: 1590px;
+      width: 400px;
+      left: 70px;
+    }
+
+    .about-card2{
+      width: 400px;
+      top: 1790px;
+      left: 90px;
+    }
+
+  }

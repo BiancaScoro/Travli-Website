@@ -1,0 +1,77 @@
+.footer{
+    position: absolute;
+    top: 2000px;
+    background-color: #095D62;
+    height: 270px;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .travlilogo2{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+  }
+
+  .footer-grid{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    gap: 80px;
+    padding-left: 400px;
+    padding-top: 50px;
+  }
+
+  .footer-grid ul{
+    list-style-type: none;
+  }
+
+  .footer-grid li{
+    padding: 7px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .column-title{
+    font-weight: bold;
+  }
+
+  .copyright{
+    color: #fff;
+    position: absolute;
+    top: 210px;
+    left: 1400px;
+    font-family:  'Noto Sans', sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    .footer{
+        top: 2600px;
+      }
+    
+      .footer-container{
+        gap: 0px;
+      }
+    
+      .footer-grid{
+        width: 400px;
+        padding-left: 115px;
+      }
+
+      .travlilogo2{
+        width: 120px;
+        height: 40px;
+        top: 200px;
+      }
+
+      .footer-grid li{
+        font-size: 11px;
+      }
+  }

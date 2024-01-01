@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.packages {
+    position: relative;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This will hide the horizontal scrollbar */
+    width: 100%;
+  }
+  
+  .packages-header{
+    position: relative;
+    width: 100%;
+  }
+  
+  .packages-bg-image {
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .packages-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    text-align: center;
+    font-size: 6em; 
+    font-family: 'Heebo';
+  }
+
+  .featured h1{
+    color: #095D62;
+    font-size: 45px;
+    position: absolute;
+    top: 800px;
+    left: 760px;
+  }
+
+  .featured p{
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .packages-cards{
+    position: absolute;
+    top: 1000px;
+    left: 365px;
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 800px;
+  }
+
+  
+  @media (max-width: 600px) {
+
+    .packages-header h1{
+        font-size: 2em;
+    }
+
+    .featured h1{
+        left: 300px;
+        top: 620px;
+        font-size: 2em;
+    }
+
+  .featured p{
+    top: 690px;
+    font-size: 14px;
+    }
+
+  .packages-cards{
+        position: absolute;
+        top: 800px;
+        left: 27px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        width: 550px;
+  }
+
+  }
+
